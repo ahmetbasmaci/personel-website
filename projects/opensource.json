@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Flutter Components Library",
+    "description": "Open source collection of reusable Flutter widgets and components designed to accelerate mobile app development. Includes custom animations, form widgets, and UI components following Material Design principles.",
+    "technologies": ["Flutter", "Dart", "Material Design", "Custom Widgets", "Animation", "Package Development"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/flutter-components.jpg",
+    "featured": true,
+    "status": "Active Development",
+    "year": "2024",
+    "stars": "45",
+    "forks": "12"
+  },
+  {
+    "title": ".NET Core API Template",
+    "description": "Comprehensive boilerplate project template for .NET Core Web API development. Includes authentication, logging, database integration, API documentation, and deployment configurations.",
+    "technologies": [".NET Core", "Entity Framework Core", "JWT Authentication", "Swagger", "Docker", "Unit Testing"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/dotnet-template.jpg",
+    "featured": true,
+    "status": "Maintained",
+    "year": "2023",
+    "stars": "28",
+    "forks": "8"
+  },
+  {
+    "title": "Islamic Prayer Times API",
+    "description": "RESTful API service providing accurate Islamic prayer times calculations for any location worldwide. Supports multiple calculation methods and includes Qibla direction calculations.",
+    "technologies": ["C#", ".NET Core", "Web API", "Mathematical Algorithms", "GeoLocation", "Docker"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/prayer-api.jpg",
+    "featured": false,
+    "status": "Active",
+    "year": "2023",
+    "stars": "67",
+    "forks": "15"
+  },
+  {
+    "title": "Mobile Development Best Practices",
+    "description": "Comprehensive guide and code examples for Flutter mobile development best practices. Covers architecture patterns, state management, testing, and performance optimization.",
+    "technologies": ["Flutter", "Dart", "Documentation", "Code Examples", "Best Practices", "Architecture Patterns"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/mobile-guide.jpg",
+    "featured": false,
+    "status": "Active",
+    "year": "2024",
+    "stars": "23",
+    "forks": "5"
+  },
+  {
+    "title": "SQL Server Utilities",
+    "description": "Collection of useful SQL Server scripts, stored procedures, and utilities for database administration and development. Includes performance monitoring and optimization tools.",
+    "technologies": ["SQL Server", "T-SQL", "Database Administration", "Performance Tuning", "Stored Procedures"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/sql-utilities.jpg",
+    "featured": false,
+    "status": "Maintained",
+    "year": "2023",
+    "stars": "19",
+    "forks": "6"
+  },
+  {
+    "title": "Web Development Starter Kit",
+    "description": "Modern web development starter template with build tools, CSS framework, JavaScript utilities, and deployment configurations. Designed for rapid prototyping and development.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Webpack", "Sass", "Build Tools", "Deployment"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/web-starter.jpg",
+    "featured": false,
+    "status": "Active",
+    "year": "2024",
+    "stars": "31",
+    "forks": "9"
+  }
+]

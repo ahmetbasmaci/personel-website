@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Islamic Apps Collection",
+    "description": "A comprehensive collection of Islamic mobile applications including prayer times, Quran reading, hadith collections, and Islamic calendar. Published on Google Play Store with thousands of downloads and positive user feedback.",
+    "technologies": ["Flutter", "Dart", "Firebase", "SQLite", "Provider State Management", "Material Design"],
+    "github": "https://github.com/ahmetbasmaci/Islamic_App",
+    "demo": "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1",
+    "image": "assets/projects/islamic-app.jpg",
+    "featured": true,
+    "status": "Published",
+    "year": "2023"
+  },
+  {
+    "title": "Hadith Books Mobile App",
+    "description": "Mobile application featuring authentic hadith collections from major Islamic sources. Includes advanced search functionality, bookmarking capabilities, and offline reading support.",
+    "technologies": ["Flutter", "Dart", "Local Database", "SQLite", "Search Algorithms"],
+    "github": "https://github.com/ahmetbasmaci/hadith_books",
+    "demo": "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1",
+    "image": "assets/projects/hadith-app.jpg",
+    "featured": true,
+    "status": "Published",
+    "year": "2023"
+  },
+  {
+    "title": "Prayer Times & Qibla App",
+    "description": "Accurate prayer times calculator with Qibla direction finder. Features include multiple calculation methods, location-based services, and notification system for prayer reminders.",
+    "technologies": ["Flutter", "Dart", "GPS Location", "Push Notifications", "Compass API"],
+    "demo": "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1",
+    "image": "assets/projects/prayer-app.jpg",
+    "featured": false,
+    "status": "Published",
+    "year": "2022"
+  },
+  {
+    "title": "Quran Reading App",
+    "description": "Beautiful Quran reading application with multiple translations, audio recitation, and verse-by-verse learning features. Supports multiple languages and reading modes.",
+    "technologies": ["Flutter", "Dart", "Audio Streaming", "Multi-language Support", "Custom UI"],
+    "demo": "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1",
+    "image": "assets/projects/quran-app.jpg",
+    "featured": false,
+    "status": "Published",
+    "year": "2022"
+  },
+  {
+    "title": "Task Management Mobile App",
+    "description": "Cross-platform task management application with synchronization capabilities, priority levels, and team collaboration features. Built for productivity and efficiency.",
+    "technologies": ["Flutter", "Dart", "Cloud Firestore", "Authentication", "Real-time Sync"],
+    "github": "https://github.com/ahmetbasmaci",
+    "image": "assets/projects/task-app.jpg",
+    "featured": false,
+    "status": "In Development",
+    "year": "2024"
+  }
+]

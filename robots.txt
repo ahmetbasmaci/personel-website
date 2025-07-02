@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Disallow sensitive directories (if any)
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of assets
+Allow: /assets/
+Allow: /js/
+Allow: /projects/
+
+# Crawl-delay (optional - adjust based on your hosting)
+Crawl-delay: 1

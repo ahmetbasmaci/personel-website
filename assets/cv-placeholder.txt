@@ -1,0 +1,18 @@
+# Ahmet Basmaci CV Placeholder
+
+This is a placeholder for the CV PDF file. 
+
+To use the download functionality:
+1. Copy your CV PDF file to the assets/ directory
+2. Rename it to "ahmet_basmaci_cv.pdf"
+3. The download button in the hero section will work automatically
+
+The CV should be in PDF format and contain:
+- Personal information and contact details
+- Professional experience
+- Skills and technologies
+- Education background
+- Projects and achievements
+- Certifications (if any)
+
+Current path expected: `assets/ahmet_basmaci_cv.pdf`

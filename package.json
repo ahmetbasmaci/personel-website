@@ -1,0 +1,45 @@
+{
+  "name": "ahmet-basmaci-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ahmet Basmaci - Flutter & .NET Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/",
+    "serve": "python -m http.server 8000",
+    "validate": "html-validate index.html",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html",
+    "deploy": "echo 'Deploy script - configure based on your hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "flutter-developer",
+    "dotnet-developer",
+    "web-development",
+    "mobile-development"
+  ],
+  "author": {
+    "name": "Ahmet Basmaci",
+    "email": "engahmet10@gmail.com",
+    "url": "https://github.com/ahmetbasmaci"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ahmetbasmaci",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmetbasmaci/personal-website"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "html-validate": "^8.0.0",
+    "lighthouse": "^10.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
