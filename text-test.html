@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ahmet Basmaci</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Test Content -->
+    <section style="padding-top: 100px; min-height: 100vh;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">ABOUT</div>
+                <h2 class="section-subtitle">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This is a test paragraph to check the text styling. The text should be clearly readable with good contrast in both light and dark themes. This paragraph contains enough text to test line height and spacing.</p>
+                    
+                    <p>Here's another paragraph to test the spacing between paragraphs. The text color should have sufficient contrast against the background, and the font weight should be appropriate for easy reading.</p>
+                    
+                    <h3>This is a heading</h3>
+                    <p>This paragraph follows a heading to test the spacing and hierarchy. The heading should stand out clearly from the body text.</p>
+                    
+                    <h4>Subheading Example</h4>
+                    <p>Another paragraph with different content to test consistency. The text should maintain good readability throughout the page as you scroll down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More sections to test scrolling -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">SKILLS</div>
+                <h2 class="section-subtitle">Skills Section</h2>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h4>Frontend Development</h4>
+                    <p>This is test content in a card. The text should be clearly readable with proper contrast and spacing.</p>
+                    <p>Multiple paragraphs in a card should maintain consistent styling and readability.</p>
+                </div>
+                
+                <div class="skills-category">
+                    <h4>Backend Development</h4>
+                    <p>Another card with test content to verify styling consistency across different sections.</p>
+                    <p>The background and text colors should provide excellent readability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">PROJECTS</div>
+                <h2 class="section-subtitle">Projects Section</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Web</span>
+                    </div>
+                    <h3 class="project-title">Test Project</h3>
+                    <p class="project-description">This is a project description to test text styling in project cards. The text should be readable and well-spaced.</p>
+                    <p class="project-description">Additional description text to test multiple paragraphs in project cards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+        }
+    </script>
+</body>
+</html>

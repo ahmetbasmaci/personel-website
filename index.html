@@ -70,13 +70,36 @@
                 <a href="#home">Ahmet Basmaci</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light theme" aria-label="Toggle dark/light theme">
+                <a href="#home" class="nav-link" data-translate="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav.about">About</a>
+                <a href="#skills" class="nav-link" data-translate="nav.skills">Skills</a>
+                <a href="#projects" class="nav-link" data-translate="nav.projects">Projects</a>
+                <a href="#experience" class="nav-link" data-translate="nav.experience">Experience</a>
+                <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-toggle" id="lang-toggle" title="Change Language">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/16x12/us.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </div>
+                        <div class="lang-option" data-lang="tr">
+                            <img src="https://flagcdn.com/16x12/tr.png" alt="Türkçe" class="flag-icon">
+                            <span>Türkçe</span>
+                        </div>
+                        <div class="lang-option" data-lang="ar">
+                            <img src="https://flagcdn.com/16x12/sa.png" alt="العربية" class="flag-icon">
+                            <span>العربية</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light theme" aria-label="Toggle dark/light theme" data-translate-attr="title:common.themeToggle">
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
@@ -93,16 +116,16 @@
         <div class="hero-container">
             <div class="hero-content" data-aos="fade-up">
                 <div class="hero-text">
-                    <h1 class="hero-title">FLUTTER & .NET DEVELOPER</h1>
-                    <h2 class="hero-name">Ahmet Basmaci</h2>
-                    <p class="hero-description">
+                    <h1 class="hero-title" data-translate="hero.title">FLUTTER & .NET DEVELOPER</h1>
+                    <h2 class="hero-name" data-translate="hero.name">Ahmet Basmaci</h2>
+                    <p class="hero-description" data-translate="hero.description">
                         Passionate mobile and web developer with expertise in Flutter, .NET, and modern development frameworks. 
                         Creating innovative solutions and publishing successful mobile applications on Play Store.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#contact" class="btn btn-primary" data-translate="hero.getInTouch">Get In Touch</a>
                         <a href="assets/ahmet_basmaci_cv.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i> Download CV
+                            <i class="fas fa-download"></i> <span data-translate="hero.downloadCV">Download CV</span>
                         </a>
                     </div>
                     <div class="hero-social">
@@ -121,8 +144,15 @@
                     </div>
                 </div>
                 <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                    <div class="image-placeholder">
-                        <i class="fas fa-code"></i>
+                    <div class="profile-image-container">
+                        <img src="assets/images/profile.jpg" alt="Ahmet Basmaci - Flutter & .NET Developer" class="profile-image" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="tech-icons">
+                                <i class="fab fa-flutter"></i>
+                                <i class="fas fa-code"></i>
+                                <i class="fab fa-js"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,17 +163,17 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">ABOUT</h2>
-                <h3 class="section-subtitle">Get to know me better</h3>
+                <h2 class="section-title" data-translate="about.sectionTitle">ABOUT</h2>
+                <h3 class="section-subtitle" data-translate="about.sectionSubtitle">Get to know me better</h3>
             </div>
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <p>
+                    <p data-translate="about.paragraph1">
                         I am a dedicated and passionate software developer with a strong background in mobile and web development. 
                         My journey in technology has led me to specialize in Flutter for cross-platform mobile development and 
                         .NET for robust backend solutions.
                     </p>
-                    <p>
+                    <p data-translate="about.paragraph2">
                         With experience in publishing multiple applications on Google Play Store and working with various 
                         technologies, I bring a comprehensive understanding of the full development lifecycle. I'm always 
                         eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible.
@@ -151,21 +181,22 @@
                     <div class="about-stats">
                         <div class="stat">
                             <h4>5+</h4>
-                            <p>Published Apps</p>
+                            <p data-translate="about.stats.apps">Published Apps</p>
                         </div>
                         <div class="stat">
                             <h4>3+</h4>
-                            <p>Years Experience</p>
+                            <p data-translate="about.stats.experience">Years Experience</p>
                         </div>
                         <div class="stat">
                             <h4>10+</h4>
-                            <p>Technologies</p>
+                            <p data-translate="about.stats.technologies">Technologies</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
+                    <div class="about-profile-container">
+                        <img src="assets/images/profile.jpg" alt="Ahmet Basmaci - Professional Profile" class="about-profile-image" loading="lazy">
+                        <div class="profile-border"></div>
                     </div>
                 </div>
             </div>
@@ -176,12 +207,12 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">SKILLS</h2>
-                <h3 class="section-subtitle">Technologies I work with</h3>
+                <h2 class="section-title" data-translate="skills.sectionTitle">SKILLS</h2>
+                <h3 class="section-subtitle" data-translate="skills.sectionSubtitle">Technologies I work with</h3>
             </div>
             <div class="skills-content">
                 <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Mobile Development</h4>
+                    <h4 data-translate="skills.categories.mobile">Mobile Development</h4>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-flutter"></i>
@@ -203,7 +234,7 @@
                 </div>
                 
                 <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-                    <h4>Backend Development</h4>
+                    <h4 data-translate="skills.categories.backend">Backend Development</h4>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-microsoft"></i>
@@ -225,7 +256,7 @@
                 </div>
 
                 <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Frontend Development</h4>
+                    <h4 data-translate="skills.categories.frontend">Frontend Development</h4>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-html5"></i>
@@ -247,7 +278,7 @@
                 </div>
 
                 <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
-                    <h4>Database & Tools</h4>
+                    <h4 data-translate="skills.categories.database">Database & Tools</h4>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
@@ -275,17 +306,11 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">PROJECTS</h2>
-                <h3 class="section-subtitle">My latest work</h3>
-            </div>
-            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="opensource">Open Source</button>
+                <h2 class="section-title" data-translate="projects.sectionTitle">PROJECTS</h2>
+                <h3 class="section-subtitle" data-translate="projects.sectionSubtitle">My Flutter Projects</h3>
             </div>
             <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded dynamically -->
+                <!-- Flutter projects will be loaded dynamically -->
             </div>
         </div>
     </section>
@@ -294,17 +319,17 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">EXPERIENCE</h2>
-                <h3 class="section-subtitle">My professional journey</h3>
+                <h2 class="section-title" data-translate="experience.sectionTitle">EXPERIENCE</h2>
+                <h3 class="section-subtitle" data-translate="experience.sectionSubtitle">My professional journey</h3>
             </div>
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Sep 2023 - Present</div>
-                        <h4>Flutter Developer</h4>
-                        <h5>Primeware Software Solutions</h5>
-                        <p>Developing cross-platform mobile applications using Flutter framework. Working on various client projects and contributing to the company's mobile development initiatives.</p>
+                        <div class="timeline-date" data-translate="experience.positions.flutter.date">Sep 2023 - Present</div>
+                        <h4 data-translate="experience.positions.flutter.title">Flutter Developer</h4>
+                        <h5 data-translate="experience.positions.flutter.company">Primeware Software Solutions</h5>
+                        <p data-translate="experience.positions.flutter.description">Developing cross-platform mobile applications using Flutter framework. Working on various client projects and contributing to the company's mobile development initiatives.</p>
                         <div class="timeline-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Dart</span>
@@ -316,10 +341,10 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jun 2023 - Sep 2023</div>
-                        <h4>.NET Developer</h4>
-                        <h5>Primeware Software Solutions</h5>
-                        <p>Developed web applications using .NET framework, ASP.NET, and C#. Worked on backend systems and API development for various client projects.</p>
+                        <div class="timeline-date" data-translate="experience.positions.dotnet.date">Jun 2023 - Sep 2023</div>
+                        <h4 data-translate="experience.positions.dotnet.title">.NET Developer</h4>
+                        <h5 data-translate="experience.positions.dotnet.company">Primeware Software Solutions</h5>
+                        <p data-translate="experience.positions.dotnet.description">Developed web applications using .NET framework, ASP.NET, and C#. Worked on backend systems and API development for various client projects.</p>
                         <div class="timeline-tags">
                             <span class="tag">.NET</span>
                             <span class="tag">C#</span>
@@ -332,10 +357,10 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2021 - Present</div>
-                        <h4>Independent Mobile App Developer</h4>
-                        <h5>Google Play Store</h5>
-                        <p>Published and maintain several mobile applications on Google Play Store, gaining experience in the complete app development lifecycle from concept to deployment.</p>
+                        <div class="timeline-date" data-translate="experience.positions.independent.date">2021 - Present</div>
+                        <h4 data-translate="experience.positions.independent.title">Independent Mobile App Developer</h4>
+                        <h5 data-translate="experience.positions.independent.company">Google Play Store</h5>
+                        <p data-translate="experience.positions.independent.description">Published and maintain several mobile applications on Google Play Store, gaining experience in the complete app development lifecycle from concept to deployment.</p>
                         <div class="timeline-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">App Publishing</span>
@@ -351,8 +376,8 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">CONTACT</h2>
-                <h3 class="section-subtitle">Let's work together</h3>
+                <h2 class="section-title" data-translate="contact.sectionTitle">CONTACT</h2>
+                <h3 class="section-subtitle" data-translate="contact.sectionSubtitle">Let's work together</h3>
             </div>
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
@@ -361,7 +386,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Email</h4>
+                            <h4 data-translate="contact.details.email">Email</h4>
                             <a href="mailto:engahmet10@gmail.com">engahmet10@gmail.com</a>
                         </div>
                     </div>
@@ -370,7 +395,7 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Phone</h4>
+                            <h4 data-translate="contact.details.phone">Phone</h4>
                             <a href="tel:+905398416843">+90 539 841 68 43</a>
                         </div>
                     </div>
@@ -379,7 +404,7 @@
                             <i class="fab fa-github"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>GitHub</h4>
+                            <h4 data-translate="contact.details.github">GitHub</h4>
                             <a href="https://github.com/ahmetbasmaci" target="_blank" rel="noopener">github.com/ahmetbasmaci</a>
                         </div>
                     </div>
@@ -388,7 +413,7 @@
                             <i class="fab fa-linkedin"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>LinkedIn</h4>
+                            <h4 data-translate="contact.details.linkedin">LinkedIn</h4>
                             <a href="https://www.linkedin.com/in/ahmet-basmaci-490b48234/" target="_blank" rel="noopener">linkedin.com/in/ahmet-basmaci</a>
                         </div>
                     </div>
@@ -397,21 +422,21 @@
                     <form id="contact-form">
                         <div class="form-group">
                             <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
+                            <label for="name" data-translate="contact.form.name">Your Name</label>
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
+                            <label for="email" data-translate="contact.form.email">Your Email</label>
                         </div>
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
+                            <label for="subject" data-translate="contact.form.subject">Subject</label>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" required></textarea>
-                            <label for="message">Your Message</label>
+                            <label for="message" data-translate="contact.form.message">Your Message</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-translate="contact.form.send">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -422,7 +447,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Ahmet Basmaci. All rights reserved.</p>
+                <p data-translate="footer.copyright">&copy; 2025 Ahmet Basmaci. All rights reserved.</p>
                 <div class="footer-social">
                     <a href="https://github.com/ahmetbasmaci" target="_blank" rel="noopener" class="social-link" title="GitHub Profile">
                         <i class="fab fa-github"></i>
@@ -438,6 +463,8 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/language.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

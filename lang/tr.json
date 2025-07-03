@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "FLUTTER & .NET GELİŞTİRİCİSİ",
+    "name": "Ahmet Başmacı",
+    "description": "Flutter, .NET ve modern geliştirme framework'lerinde uzman, tutkulu mobil ve web geliştiricisi. Yenilikçi çözümler üretiyor ve Play Store'da başarılı mobil uygulamalar yayınlıyor.",
+    "getInTouch": "İletişime Geç",
+    "downloadCV": "CV İndir"
+  },
+  "about": {
+    "sectionTitle": "HAKKIMDA",
+    "sectionSubtitle": "Beni daha yakından tanıyın",
+    "paragraph1": "Mobil ve web geliştirme alanında güçlü bir geçmişe sahip, kendini işine adamış ve tutkulu bir yazılım geliştiricisiyim. Teknoloji yolculuğum beni cross-platform mobil geliştirme için Flutter ve sağlam backend çözümleri için .NET konularında uzmanlaşmaya yönlendirdi.",
+    "paragraph2": "Google Play Store'da birden fazla uygulama yayınlama deneyimi ve çeşitli teknolojilerle çalışma tecrübesiyle, tam geliştirme yaşam döngüsünü kapsamlı bir şekilde anlıyorum. Her zaman yeni teknolojiler öğrenmeye ve mümkün olanın sınırlarını zorlayan zorlu projelerle uğraşmaya istekliyim.",
+    "stats": {
+      "apps": "Yayınlanan Uygulama",
+      "experience": "Yıl Deneyim",
+      "technologies": "Teknoloji"
+    }
+  },
+  "skills": {
+    "sectionTitle": "YETENEKLERİM",
+    "sectionSubtitle": "Çalıştığım teknolojiler",
+    "categories": {
+      "mobile": "Mobil Geliştirme",
+      "backend": "Backend Geliştirme",
+      "frontend": "Frontend Geliştirme",
+      "database": "Veritabanı & Araçlar"
+    }
+  },
+  "projects": {
+    "sectionTitle": "PROJELER",
+    "sectionSubtitle": "Flutter Projelerim",
+    "filter": {
+      "all": "Tümü",
+      "mobile": "Mobil",
+      "web": "Web",
+      "opensource": "Açık Kaynak"
+    },
+    "links": {
+      "code": "Kod",
+      "demo": "Canlı Demo",
+      "playStore": "Play Store"
+    }
+  },
+  "experience": {
+    "sectionTitle": "DENEYİM",
+    "sectionSubtitle": "Profesyonel yolculuğum",
+    "positions": {
+      "flutter": {
+        "title": "Flutter Geliştiricisi",
+        "company": "Primeware Yazılım Çözümleri",
+        "date": "Eyl 2023 - Devam Ediyor",
+        "description": "Flutter framework kullanarak cross-platform mobil uygulamalar geliştiriyorum. Çeşitli müşteri projelerinde çalışıyor ve şirketin mobil geliştirme girişimlerine katkıda bulunuyorum."
+      },
+      "dotnet": {
+        "title": ".NET Geliştiricisi",
+        "company": "Primeware Yazılım Çözümleri",
+        "date": "Haz 2023 - Eyl 2023",
+        "description": ".NET framework, ASP.NET ve C# kullanarak web uygulamaları geliştirdim. Çeşitli müşteri projeleri için backend sistemleri ve API geliştirme üzerinde çalıştım."
+      },
+      "independent": {
+        "title": "Bağımsız Mobil Uygulama Geliştiricisi",
+        "company": "Google Play Store",
+        "date": "2021 - Devam Ediyor",
+        "description": "Google Play Store'da birkaç mobil uygulama yayınladım ve sürdürüyorum, konseptten dağıtıma kadar tam uygulama geliştirme yaşam döngüsünde deneyim kazandım."
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "İLETİŞİM",
+    "sectionSubtitle": "Birlikte çalışalım",
+    "details": {
+      "email": "E-posta",
+      "phone": "Telefon",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Ahmet Başmacı. Tüm hakları saklıdır."
+  },
+  "common": {
+    "themeToggle": "Karanlık/aydınlık tema arasında geçiş yap"
+  }
+}

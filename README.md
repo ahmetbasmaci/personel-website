@@ -215,3 +215,87 @@ For any questions or collaboration opportunities:
 ---
 
 **Built with ❤️ by Ahmet Basmaci**
+
+## 🌍 Multi-Language Support
+
+This website supports three languages:
+- **English (EN)** - Default language
+- **Turkish (TR)** - Turkish localization
+- **Arabic (AR)** - Arabic localization with RTL support
+
+### Language Features
+
+#### Automatic Language Detection
+- Language preference is saved in browser localStorage
+- Default language is English if no preference is set
+- Language persists across page refreshes
+
+#### Complete Translation Coverage
+- Navigation menu
+- Hero section
+- About section with statistics
+- Skills categories
+- Project filters and content
+- Experience timeline
+- Contact form and details
+- Footer and common elements
+
+#### RTL (Right-to-Left) Support
+- Arabic language automatically switches to RTL layout
+- Proper text alignment and direction
+- Mirrored layout elements for better readability
+- Language-specific fonts (Cairo font for Arabic)
+
+#### Dynamic Content Translation
+- Project category badges
+- Project filter buttons
+- Project link buttons (Code, Live Demo, Play Store)
+- Form placeholders and validation messages
+
+### Language Switching
+
+Use the language switcher in the top navigation:
+1. Click the current language indicator (EN/TR/AR)
+2. Select your preferred language from the dropdown
+3. All content updates immediately
+4. Language preference is automatically saved
+
+### Adding New Languages
+
+To add a new language:
+
+1. Create a new translation file in `lang/` directory (e.g., `lang/fr.json`)
+2. Copy the structure from `lang/en.json`
+3. Translate all text values
+4. Add the language code to `supportedLanguages` array in `js/language.js`
+5. Add RTL support if needed in `rtlLanguages` array
+6. Update the language switcher in `index.html`
+
+### Translation File Structure
+
+```json
+{
+  "nav": { /* Navigation items */ },
+  "hero": { /* Hero section content */ },
+  "about": { /* About section with stats */ },
+  "skills": { /* Skills categories */ },
+  "projects": { 
+    /* Project section with filters and links */
+    "filter": { /* Filter buttons */ },
+    "links": { /* Project link texts */ }
+  },
+  "experience": { /* Experience timeline */ },
+  "contact": { /* Contact form and details */ },
+  "footer": { /* Footer content */ },
+  "common": { /* Common UI elements */ }
+}
+```
+
+### Technical Implementation
+
+- **Language Manager Class**: Handles all language operations
+- **Translation Loading**: Async loading of JSON translation files
+- **Dynamic Updates**: Real-time content updates without page reload
+- **Fallback System**: English fallback for missing translations
+- **Type Safety**: Proper error handling for missing translation keys
+- **Performance**: Optimized loading and caching of translations

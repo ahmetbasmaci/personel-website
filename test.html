@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Test - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .test-result {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multi-Language Website Test</h1>
+    
+    <div class="test-section">
+        <h2>Quick Tests</h2>
+        <button onclick="openMainWebsite()">Open Main Website</button>
+        <button onclick="runLanguageTests()">Run Language Tests</button>
+        <button onclick="testRTLLayout()">Test RTL Layout</button>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Results</h2>
+        <div id="test-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Instructions</h2>
+        <ol>
+            <li><strong>Language Switching:</strong> Click the language dropdown (EN/TR/AR) in the top navigation</li>
+            <li><strong>Content Translation:</strong> All text should change to the selected language</li>
+            <li><strong>RTL Layout:</strong> Arabic should display right-to-left</li>
+            <li><strong>Project Filters:</strong> Project filter buttons should be translated</li>
+            <li><strong>Dynamic Content:</strong> Project categories and links should update</li>
+            <li><strong>Persistent Language:</strong> Refresh the page - language should persist</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Features to Verify</h2>
+        <ul>
+            <li>✅ Navigation menu translation</li>
+            <li>✅ Hero section translation</li>
+            <li>✅ About section translation</li>
+            <li>✅ Skills section translation</li>
+            <li>✅ Projects section translation</li>
+            <li>✅ Experience section translation</li>
+            <li>✅ Contact section translation</li>
+            <li>✅ Footer translation</li>
+            <li>✅ Project filter buttons translation</li>
+            <li>✅ Project category badges translation</li>
+            <li>✅ Project link buttons translation</li>
+            <li>✅ Form placeholder text translation</li>
+            <li>✅ RTL layout for Arabic</li>
+            <li>✅ Language persistence on page refresh</li>
+        </ul>
+    </div>
+
+    <script>
+        function openMainWebsite() {
+            window.open('index.html', '_blank');
+        }
+
+        function addTestResult(message, type = 'info') {
+            const resultsDiv = document.getElementById('test-results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${type}`;
+            resultDiv.textContent = message;
+            resultsDiv.appendChild(resultDiv);
+        }
+
+        function runLanguageTests() {
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '';
+
+            addTestResult('Starting language functionality tests...', 'info');
+
+            // Test if translation files are accessible
+            const languages = ['en', 'tr', 'ar'];
+            languages.forEach(async (lang) => {
+                try {
+                    const response = await fetch(`./lang/${lang}.json`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        addTestResult(`✅ ${lang.toUpperCase()} translation file loaded successfully`, 'success');
+                        
+                        // Check if required sections exist
+                        const requiredSections = ['nav', 'hero', 'about', 'skills', 'projects', 'experience', 'contact'];
+                        const missingSections = requiredSections.filter(section => !data[section]);
+                        
+                        if (missingSections.length === 0) {
+                            addTestResult(`✅ ${lang.toUpperCase()} contains all required sections`, 'success');
+                        } else {
+                            addTestResult(`❌ ${lang.toUpperCase()} missing sections: ${missingSections.join(', ')}`, 'error');
+                        }
+                    } else {
+                        addTestResult(`❌ Failed to load ${lang.toUpperCase()} translation file`, 'error');
+                    }
+                } catch (error) {
+                    addTestResult(`❌ Error loading ${lang.toUpperCase()}: ${error.message}`, 'error');
+                }
+            });
+
+            addTestResult('Translation file tests completed. Check main website for full functionality.', 'info');
+        }
+
+        function testRTLLayout() {
+            addTestResult('RTL layout test: Open main website and switch to Arabic (AR) to verify right-to-left layout', 'info');
+        }
+
+        // Auto-run basic tests on page load
+        window.addEventListener('load', () => {
+            setTimeout(runLanguageTests, 1000);
+        });
+    </script>
+</body>
+</html>

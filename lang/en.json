@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "FLUTTER & .NET DEVELOPER",
+    "name": "Ahmet Basmaci",
+    "description": "Passionate mobile and web developer with expertise in Flutter, .NET, and modern development frameworks. Creating innovative solutions and publishing successful mobile applications on Play Store.",
+    "getInTouch": "Get In Touch",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "sectionTitle": "ABOUT",
+    "sectionSubtitle": "Get to know me better",
+    "paragraph1": "I am a dedicated and passionate software developer with a strong background in mobile and web development. My journey in technology has led me to specialize in Flutter for cross-platform mobile development and .NET for robust backend solutions.",
+    "paragraph2": "With experience in publishing multiple applications on Google Play Store and working with various technologies, I bring a comprehensive understanding of the full development lifecycle. I'm always eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible.",
+    "stats": {
+      "apps": "Published Apps",
+      "experience": "Years Experience",
+      "technologies": "Technologies"
+    }
+  },
+  "skills": {
+    "sectionTitle": "SKILLS",
+    "sectionSubtitle": "Technologies I work with",
+    "categories": {
+      "mobile": "Mobile Development",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "database": "Database & Tools"
+    }
+  },
+  "projects": {
+    "sectionTitle": "PROJECTS",
+    "sectionSubtitle": "My Flutter Projects",
+    "filter": {
+      "all": "All",
+      "mobile": "Mobile",
+      "web": "Web",
+      "opensource": "Open Source"
+    },
+    "links": {
+      "code": "Code",
+      "demo": "Live Demo",
+      "playStore": "Play Store"
+    }
+  },
+  "experience": {
+    "sectionTitle": "EXPERIENCE",
+    "sectionSubtitle": "My professional journey",
+    "positions": {
+      "flutter": {
+        "title": "Flutter Developer",
+        "company": "Primeware Software Solutions",
+        "date": "Sep 2023 - Present",
+        "description": "Developing cross-platform mobile applications using Flutter framework. Working on various client projects and contributing to the company's mobile development initiatives."
+      },
+      "dotnet": {
+        "title": ".NET Developer",
+        "company": "Primeware Software Solutions",
+        "date": "Jun 2023 - Sep 2023",
+        "description": "Developed web applications using .NET framework, ASP.NET, and C#. Worked on backend systems and API development for various client projects."
+      },
+      "independent": {
+        "title": "Independent Mobile App Developer",
+        "company": "Google Play Store",
+        "date": "2021 - Present",
+        "description": "Published and maintain several mobile applications on Google Play Store, gaining experience in the complete app development lifecycle from concept to deployment."
+      }
+    }
+  },
+  "contact": {
+    "sectionTitle": "CONTACT",
+    "sectionSubtitle": "Let's work together",
+    "details": {
+      "email": "Email",
+      "phone": "Phone",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Ahmet Basmaci. All rights reserved."
+  },
+  "common": {
+    "themeToggle": "Toggle dark/light theme"
+  }
+}

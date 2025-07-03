@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initThemeToggle();
     initScrollAnimations();
-    initProjectsFilter();
+    // Remove project filter since we only show Flutter projects
     initContactForm();
     initSmoothScrolling();
-    loadProjects();
+    
+    // Load Flutter projects after language manager is ready
+    setTimeout(() => {
+        loadProjects();
+    }, 500);
     
     // Initialize AOS (Animate On Scroll)
     AOS.init({
@@ -138,75 +142,70 @@ function initScrollAnimations() {
     });
 }
 
-// Projects filter functionality
-function initProjectsFilter() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectsGrid = document.getElementById('projects-grid');
+// Projects filter functionality - REMOVED (only showing Flutter projects)
+// function initProjectsFilter() {
+//     const filterButtons = document.querySelectorAll('.filter-btn');
+//     const projectsGrid = document.getElementById('projects-grid');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+//     filterButtons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             // Remove active class from all buttons
+//             filterButtons.forEach(btn => btn.classList.remove('active'));
+//             // Add active class to clicked button
+//             button.classList.add('active');
 
-            // Get filter value
-            const filterValue = button.getAttribute('data-filter');
+//             // Get filter value
+//             const filterValue = button.getAttribute('data-filter');
             
-            // Filter projects
-            filterProjects(filterValue);
-        });
-    });
-}
+//             // Filter projects
+//             filterProjects(filterValue);
+//         });
+//     });
+// }
 
-function filterProjects(category) {
-    const projectCards = document.querySelectorAll('.project-card');
+// function filterProjects(category) {
+//     const projectCards = document.querySelectorAll('.project-card');
     
-    projectCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
+//     projectCards.forEach(card => {
+//         const cardCategory = card.getAttribute('data-category');
         
-        if (category === 'all' || cardCategory === category) {
-            card.style.display = 'block';
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }, 100);
-        } else {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            setTimeout(() => {
-                card.style.display = 'none';
-            }, 300);
-        }
-    });
-}
+//         if (category === 'all' || cardCategory === category) {
+//             card.style.display = 'block';
+//             setTimeout(() => {
+//                 card.style.opacity = '1';
+//                 card.style.transform = 'translateY(0)';
+//             }, 100);
+//         } else {
+//             card.style.opacity = '0';
+//             card.style.transform = 'translateY(20px)';
+//             setTimeout(() => {
+//                 card.style.display = 'none';
+//             }, 300);
+//         }
+//     });
+// }
 
 // Load projects dynamically
 async function loadProjects() {
     const projectsGrid = document.getElementById('projects-grid');
     
     try {
-        // Try to load projects from JSON files
-        const [mobileProjects, webProjects, openSourceProjects] = await Promise.all([
-            fetch('./projects/mobile.json').then(res => res.ok ? res.json() : []).catch(() => []),
-            fetch('./projects/web.json').then(res => res.ok ? res.json() : []).catch(() => []),
-            fetch('./projects/opensource.json').then(res => res.ok ? res.json() : []).catch(() => [])
-        ]);
+        // Load only mobile projects from JSON file (Flutter projects from CV)
+        const mobileProjects = await fetch('./projects/mobile.json')
+            .then(res => res.ok ? res.json() : [])
+            .catch(() => []);
 
-        const allProjects = [
-            ...mobileProjects.map(p => ({ ...p, category: 'mobile' })),
-            ...webProjects.map(p => ({ ...p, category: 'web' })),
-            ...openSourceProjects.map(p => ({ ...p, category: 'opensource' }))
-        ];
+        // Only show mobile projects with category 'mobile'
+        const allProjects = mobileProjects.map(p => ({ ...p, category: 'mobile' }));
 
         if (allProjects.length > 0) {
             renderProjects(allProjects);
         } else {
-            // Fallback to hardcoded projects if JSON files don't exist
+            // Fallback to hardcoded Flutter projects if JSON file doesn't exist
             renderFallbackProjects();
         }
     } catch (error) {
-        console.log('Loading fallback projects...');
+        console.log('Loading fallback Flutter projects...');
         renderFallbackProjects();
     }
 }
@@ -221,52 +220,57 @@ function renderProjects(projects) {
         projectCard.setAttribute('data-aos-delay', (index * 100).toString());
         projectsGrid.appendChild(projectCard);
     });
+
+    // Notify language manager that projects are loaded
+    if (window.languageManager) {
+        window.languageManager.onProjectsLoaded();
+    }
 }
 
 function renderFallbackProjects() {
     const fallbackProjects = [
         {
             title: "Islamic Apps Collection",
-            description: "A collection of Islamic mobile applications including prayer times, Quran reading, and hadith collections. Published on Google Play Store with positive user feedback.",
+            description: "A comprehensive collection of Islamic mobile applications including prayer times, Quran reading, hadith collections, and Islamic calendar. Published on Google Play Store with thousands of downloads and positive user feedback.",
             category: "mobile",
-            technologies: ["Flutter", "Dart", "Firebase", "SQLite"],
+            technologies: ["Flutter", "Dart", "Firebase", "SQLite", "Provider State Management", "Material Design"],
             github: "https://github.com/ahmetbasmaci/Islamic_App",
             demo: "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1"
         },
         {
-            title: "Hadith Books App",
-            description: "Mobile application featuring authentic hadith collections with search functionality and bookmarking capabilities.",
+            title: "Hadith Books Mobile App",
+            description: "Mobile application featuring authentic hadith collections from major Islamic sources. Includes advanced search functionality, bookmarking capabilities, and offline reading support.",
             category: "mobile",
-            technologies: ["Flutter", "Dart", "Local Database"],
+            technologies: ["Flutter", "Dart", "Local Database", "SQLite", "Search Algorithms"],
             github: "https://github.com/ahmetbasmaci/hadith_books",
             demo: "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1"
         },
         {
-            title: "Primeware Web Solutions",
-            description: "Enterprise web applications developed using .NET framework and modern web technologies for various client projects.",
-            category: "web",
-            technologies: [".NET", "C#", "ASP.NET", "SQL Server", "JavaScript"],
-            demo: "https://www.primeware.com.tr/"
+            title: "Prayer Times & Qibla App",
+            description: "Accurate prayer times calculator with Qibla direction finder. Features location-based services, multiple calculation methods, and notification system for prayer reminders.",
+            category: "mobile",
+            technologies: ["Flutter", "Dart", "GPS Location", "Push Notifications", "Compass API", "Background Services"],
+            demo: "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1"
         },
         {
-            title: "Flutter Components Library",
-            description: "Open source collection of reusable Flutter widgets and components to accelerate mobile app development.",
-            category: "opensource",
-            technologies: ["Flutter", "Dart", "Material Design"],
+            title: "Quran Reading App",
+            description: "Beautiful Quran reading application with multiple translations, audio recitation, and verse-by-verse learning features. Supports multiple languages and reading modes.",
+            category: "mobile",
+            technologies: ["Flutter", "Dart", "Audio Streaming", "Multi-language Support", "Custom UI", "Offline Storage"],
+            demo: "https://play.google.com/store/apps/developer?id=dev.+ahmet+basmac%C4%B1"
+        },
+        {
+            title: "E-Commerce Mobile App",
+            description: "Cross-platform e-commerce mobile application with product catalog, shopping cart, payment integration, and order tracking. Built with modern Flutter architecture patterns.",
+            category: "mobile",
+            technologies: ["Flutter", "Dart", "REST API", "Payment Gateway", "State Management", "Push Notifications"],
             github: "https://github.com/ahmetbasmaci"
         },
         {
-            title: "Personal Portfolio Website",
-            description: "Modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript featuring dark/light theme support.",
-            category: "web",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-            github: "https://github.com/ahmetbasmaci"
-        },
-        {
-            title: ".NET Core API Template",
-            description: "Boilerplate project template for .NET Core Web API with authentication, logging, and database integration.",
-            category: "opensource",
-            technologies: [".NET Core", "Entity Framework", "JWT", "Swagger"],
+            title: "Task Management App",
+            description: "Productivity mobile application with task organization, priority management, team collaboration, and real-time synchronization across devices.",
+            category: "mobile",
+            technologies: ["Flutter", "Dart", "Cloud Firestore", "Authentication", "Real-time Sync", "Bloc Pattern"],
             github: "https://github.com/ahmetbasmaci"
         }
     ];
@@ -285,16 +289,40 @@ function createProjectCard(project) {
         opensource: '#0EA5E9'
     };
 
-    const categoryNames = {
-        mobile: 'Mobile App',
-        web: 'Web Application',
-        opensource: 'Open Source'
+    // Get translated category names
+    const getCategoryName = (category) => {
+        if (window.languageManager) {
+            const translationKey = `projects.filter.${category}`;
+            return window.languageManager.translateDynamicContent(null, translationKey, category);
+        }
+        
+        // Fallback category names
+        const categoryNames = {
+            mobile: 'Mobile',
+            web: 'Web',
+            opensource: 'Open Source'
+        };
+        return categoryNames[category] || category;
     };
+
+    // Get translated link texts
+    const getLinkText = (key, fallback) => {
+        if (window.languageManager) {
+            const translationKey = `projects.links.${key}`;
+            return window.languageManager.translateDynamicContent(null, translationKey, fallback);
+        }
+        return fallback;
+    };
+
+    const categoryName = getCategoryName(project.category);
+    const codeText = getLinkText('code', 'Code');
+    const demoText = getLinkText('demo', 'Live Demo');
+    const playStoreText = getLinkText('playStore', 'Play Store');
 
     card.innerHTML = `
         <div class="project-header">
             <span class="project-category" style="background-color: ${categoryColors[project.category]}20; color: ${categoryColors[project.category]}">
-                ${categoryNames[project.category]}
+                ${categoryName}
             </span>
         </div>
         <h3 class="project-title">${project.title}</h3>
@@ -303,8 +331,8 @@ function createProjectCard(project) {
             ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
         <div class="project-links">
-            ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>` : ''}
-            ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt"></i> ${project.category === 'mobile' ? 'Play Store' : 'Live Demo'}</a>` : ''}
+            ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> ${codeText}</a>` : ''}
+            ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt"></i> ${project.category === 'mobile' ? playStoreText : demoText}</a>` : ''}
         </div>
     `;
 
@@ -396,6 +424,28 @@ function showNotification(message, type) {
         }, 300);
     }, 5000);
 }
+
+// Handle profile image loading
+function handleProfileImageError() {
+    const profileImages = document.querySelectorAll('.profile-image, .about-profile-image');
+    
+    profileImages.forEach(img => {
+        img.addEventListener('error', function() {
+            // Create fallback placeholder
+            const placeholder = document.createElement('div');
+            placeholder.className = 'image-placeholder';
+            placeholder.innerHTML = this.classList.contains('profile-image') ? 
+                '<i class="fas fa-code"></i>' : 
+                '<i class="fas fa-user"></i>';
+            
+            // Replace image with placeholder
+            this.parentNode.replaceChild(placeholder, this);
+        });
+    });
+}
+
+// Initialize profile image error handling
+document.addEventListener('DOMContentLoaded', handleProfileImageError);
 
 // Utility functions
 function debounce(func, wait) {
