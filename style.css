@@ -134,6 +134,26 @@
     color: var(--text-primary);
 }
 
+/* Light theme custom icons */
+[data-theme="light"] .skill-item .flutter-icon,
+[data-theme="light"] .skill-item .dart-icon {
+    /* SVG icons maintain their original colors in both themes */
+    opacity: 1;
+}
+
+/* Light theme brand colors - adjusted for better contrast */
+[data-theme="light"] .skill-item .fa-github {
+    color: #181717; /* GitHub Black for light theme */
+}
+
+[data-theme="light"] .skill-item .fa-js {
+    color: #F0DB4F; /* Slightly darker JavaScript yellow */
+}
+
+[data-theme="light"] .skill-item .fa-fire {
+    color: #FF8F00; /* Darker Firebase orange for better contrast */
+}
+
 [data-theme="light"] .project-title {
     color: var(--text-primary);
 }
@@ -923,6 +943,104 @@ section {
     font-size: 0.9rem;
     color: var(--text-secondary);
     font-weight: var(--font-weight-medium);
+}
+
+/* Custom Icons for Flutter and Dart */
+.skill-item .flutter-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--spacing-xs);
+    transition: transform var(--transition-normal);
+}
+
+.skill-item .dart-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--spacing-xs);
+    transition: transform var(--transition-normal);
+}
+
+.skill-item:hover .flutter-icon,
+.skill-item:hover .dart-icon {
+    transform: scale(1.1);
+}
+
+/* Brand Colors for Technology Icons */
+/* Mobile Development */
+.skill-item .fa-android {
+    color: #3DDC84; /* Android Green */
+}
+
+.skill-item .fa-apple {
+    color: #A6B1B7; /* iOS Gray */
+}
+
+/* Backend Development */
+.skill-item .fa-microsoft {
+    color: #0078D4; /* Microsoft Blue */
+}
+
+.skill-item .fa-hashtag {
+    color: #239120; /* C# Green */
+}
+
+.skill-item .fa-server {
+    color: #512BD4; /* ASP.NET Purple */
+}
+
+.skill-item .fa-cloud {
+    color: #0078D4; /* Web API Blue */
+}
+
+/* Frontend Development */
+.skill-item .fa-html5 {
+    color: #E34F26; /* HTML5 Orange */
+}
+
+.skill-item .fa-css3-alt {
+    color: #1572B6; /* CSS3 Blue */
+}
+
+.skill-item .fa-js {
+    color: #F7DF1E; /* JavaScript Yellow */
+}
+
+.skill-item .fa-bootstrap {
+    color: #7952B3; /* Bootstrap Purple */
+}
+
+/* Database & Tools */
+.skill-item .fa-database {
+    color: #CC2927; /* SQL Server Red */
+}
+
+.skill-item .fa-git-alt {
+    color: #F05032; /* Git Orange */
+}
+
+.skill-item .fa-github {
+    color: #F0F6FC; /* GitHub Light Gray for dark theme */
+}
+
+.skill-item .fa-fire {
+    color: #FFCA28; /* Firebase Yellow */
+}
+
+/* AI & Prompt Engineering */
+.skill-item .fa-robot {
+    color: #10A37F; /* ChatGPT Green */
+}
+
+.skill-item .fa-brain {
+    color: #D97706; /* Claude Orange */
+}
+
+.skill-item .fa-magic {
+    color: #8B5CF6; /* Prompt Engineering Purple */
+}
+
+.skill-item .fa-code-branch {
+    color: #0969DA; /* GitHub Copilot Blue */
 }
 
 /* Projects Section */

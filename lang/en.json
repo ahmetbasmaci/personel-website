@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "FLUTTER & .NET DEVELOPER",
-    "name": "Ahmet Basmaci",
-    "description": "Passionate mobile and web developer with expertise in Flutter, .NET, and modern development frameworks. Creating innovative solutions and publishing successful mobile applications on Play Store.",
+    "name": "Ahmet Basmacı",
+    "description": "Passionate mobile and web developer with expertise in Flutter, .NET, and modern development frameworks. Experienced in AI tools and prompt engineering to create innovative solutions and publish successful mobile applications on Play Store.",
     "getInTouch": "Get In Touch",
     "downloadCV": "Download CV"
   },
@@ -18,7 +18,7 @@
     "sectionTitle": "ABOUT",
     "sectionSubtitle": "Get to know me better",
     "paragraph1": "I am a dedicated and passionate software developer with a strong background in mobile and web development. My journey in technology has led me to specialize in Flutter for cross-platform mobile development and .NET for robust backend solutions.",
-    "paragraph2": "With experience in publishing multiple applications on Google Play Store and working with various technologies, I bring a comprehensive understanding of the full development lifecycle. I'm always eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible.",
+    "paragraph2": "With experience in publishing multiple applications on Google Play Store and working with various technologies, I bring a comprehensive understanding of the full development lifecycle. I leverage AI tools and prompt engineering to enhance productivity and create innovative solutions. I'm always eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible.",
     "stats": {
       "apps": "Published Apps",
       "experience": "Years Experience",
@@ -32,7 +32,8 @@
       "mobile": "Mobile Development",
       "backend": "Backend Development",
       "frontend": "Frontend Development",
-      "database": "Database & Tools"
+      "database": "Database & Tools",
+      "ai": "AI & Prompt Engineering"
     }
   },
   "projects": {

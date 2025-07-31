@@ -8,17 +8,18 @@
     "contact": "İletişim"
   },
   "hero": {
-    "title": "FLUTTER & .NET GELİŞTİRİCİSİ",
-    "name": "Ahmet Başmacı",
-    "description": "Flutter, .NET ve modern geliştirme framework'lerinde uzman, tutkulu mobil ve web geliştiricisi. Yenilikçi çözümler üretiyor ve Play Store'da başarılı mobil uygulamalar yayınlıyor.",
+    "title": "FLUTTER & .NET GELİŞTİRİCİ",
+    "name": "Ahmet Basmacı",
+    "description": "Flutter, .NET ve modern geliştirme frameworklerinde uzmanlığa sahip tutkulu mobil ve web geliştiricisi. Yenilikçi çözümler oluşturmak ve Play Store'da başarılı mobil uygulamalar yayınlamak için AI araçları ve prompt mühendisliği konularında deneyimli.",
     "getInTouch": "İletişime Geç",
     "downloadCV": "CV İndir"
+  },
   },
   "about": {
     "sectionTitle": "HAKKIMDA",
     "sectionSubtitle": "Beni daha yakından tanıyın",
     "paragraph1": "Mobil ve web geliştirme alanında güçlü bir geçmişe sahip, kendini işine adamış ve tutkulu bir yazılım geliştiricisiyim. Teknoloji yolculuğum beni cross-platform mobil geliştirme için Flutter ve sağlam backend çözümleri için .NET konularında uzmanlaşmaya yönlendirdi.",
-    "paragraph2": "Google Play Store'da birden fazla uygulama yayınlama deneyimi ve çeşitli teknolojilerle çalışma tecrübesiyle, tam geliştirme yaşam döngüsünü kapsamlı bir şekilde anlıyorum. Her zaman yeni teknolojiler öğrenmeye ve mümkün olanın sınırlarını zorlayan zorlu projelerle uğraşmaya istekliyim.",
+    "paragraph2": "Google Play Store'da birden fazla uygulama yayınlama deneyimi ve çeşitli teknolojilerle çalışma tecrübesiyle, tam geliştirme yaşam döngüsünü kapsamlı bir şekilde anlıyorum. Üretkenliği artırmak ve yenilikçi çözümler oluşturmak için AI araçları ve prompt mühendisliği konularından yararlanıyorum. Her zaman yeni teknolojiler öğrenmeye ve mümkün olanın sınırlarını zorlayan zorlu projelerle uğraşmaya istekliyim.",
     "stats": {
       "apps": "Yayınlanan Uygulama",
       "experience": "Yıl Deneyim",
@@ -32,7 +33,8 @@
       "mobile": "Mobil Geliştirme",
       "backend": "Backend Geliştirme",
       "frontend": "Frontend Geliştirme",
-      "database": "Veritabanı & Araçlar"
+      "database": "Veritabanı & Araçlar",
+      "ai": "AI & Prompt Mühendisliği"
     }
   },
   "projects": {
