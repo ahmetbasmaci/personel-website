@@ -777,14 +777,37 @@ a:hover {
     opacity: 0.8;
 }
 
-/* Section Styles */
+/* Section Styles - Consistent Height */
 section {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-xl) 0;
+    min-height: 100vh; /* Force consistent viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
+/* Container for section content */
+section .container {
+    width: 100%;
+}
+
+/* Footer should not be full height */
+.footer {
+    min-height: 0 !important;
+    padding: var(--spacing-lg) 0;
+}
+
+/* Add subtle gradient overlays to alternate sections */
+.skills {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(0, 191, 166, 0.03) 100%);
+}
+
+.experience {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(108, 99, 255, 0.03) 100%);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl); /* Reduced from 4rem to 3rem */
 }
 
 .section-title {
@@ -796,20 +819,24 @@ section {
 }
 
 .section-subtitle {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced from 2.5rem */
     color: var(--text-primary);
     font-weight: var(--font-weight-bold);
 }
 
-/* About Section */
+/* About Section - Consistent Height */
 .about {
     background: var(--bg-secondary);
+    padding: var(--spacing-lg) 0; /* More compact than other sections */
+    min-height: 100vh; /* Consistent height */
+    display: flex;
+    align-items: center;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-xl); /* Reduced gap */
     align-items: center;
 }
 
@@ -820,8 +847,8 @@ section {
 
 .about-stats {
     display: flex;
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
+    gap: var(--spacing-lg); /* Reduced gap between stats */
+    margin-top: var(--spacing-lg); /* Reduced top margin */
 }
 
 .stat {
