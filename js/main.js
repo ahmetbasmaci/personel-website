@@ -283,6 +283,22 @@ function createProjectCard(project) {
     card.className = 'project-card';
     card.setAttribute('data-category', project.category);
 
+    // Project mapping to translation keys
+    const projectTranslationMap = {
+        "Zad-Almumin: Islamic App": "islamicApp",
+        "Hadith Books Collection": "hadithBooks",
+        "Mandalawi Quran Recitation Academy": "mandalawiQuran",
+        "Alkot Mobilya Business Manager": "alkotMobilya",
+        "Tradesman's Financial Notebook": "tradesmensNotebook",
+        "Asaltna - Islamic Quiz Application": "asaltnaQuiz"
+    };
+
+    // Store the project key as a data attribute for language switching
+    const projectKey = projectTranslationMap[project.title];
+    if (projectKey) {
+        card.setAttribute('data-project-key', projectKey);
+    }
+
     const categoryColors = {
         mobile: '#14F195',
         web: '#38BDF8',
@@ -314,10 +330,21 @@ function createProjectCard(project) {
         return fallback;
     };
 
+    // Get translated project title and description
+    const getProjectText = (key, fallback) => {
+        if (window.languageManager && projectKey) {
+            const translationKey = `projects.${projectKey}.${key}`;
+            return window.languageManager.translateDynamicContent(null, translationKey, fallback);
+        }
+        return fallback;
+    };
+
     const categoryName = getCategoryName(project.category);
     const codeText = getLinkText('code', 'Code');
     const demoText = getLinkText('demo', 'Live Demo');
     const playStoreText = getLinkText('playStore', 'Play Store');
+    const projectTitle = getProjectText('title', project.title);
+    const projectDescription = getProjectText('description', project.description);
 
     card.innerHTML = `
         <div class="project-header">
@@ -325,8 +352,8 @@ function createProjectCard(project) {
                 ${categoryName}
             </span>
         </div>
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-description">${project.description}</p>
+        <h3 class="project-title">${projectTitle}</h3>
+        <p class="project-description">${projectDescription}</p>
         <div class="project-tech">
             ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>

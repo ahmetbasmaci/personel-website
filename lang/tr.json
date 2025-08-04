@@ -14,7 +14,6 @@
     "getInTouch": "İletişime Geç",
     "downloadCV": "CV İndir"
   },
-  },
   "about": {
     "sectionTitle": "HAKKIMDA",
     "sectionSubtitle": "Beni daha yakından tanıyın",
@@ -39,7 +38,7 @@
   },
   "projects": {
     "sectionTitle": "PROJELER",
-    "sectionSubtitle": "Flutter Projelerim",
+    "sectionSubtitle": "Öne Çıkan Mobil ve Web Uygulamaları",
     "filter": {
       "all": "Tümü",
       "mobile": "Mobil",
@@ -50,6 +49,102 @@
       "code": "Kod",
       "demo": "Canlı Demo",
       "playStore": "Play Store"
+    },
+    "islamicApp": {
+      "title": "Zad-Almumin: İslami Uygulama",
+      "description": "Kuran okuma, günlük dualar (Ezkar), Hadis koleksiyonları, namaz vakitleri ve İslami hatırlatmalar sunan kapsamlı bir İslami mobil uygulama. Güzel UI tasarımı, çok dil desteği (Arapça, İngilizce, Türkçe), okuma için gece modu ve açıklamalı Esmaül Hüsna gibi çeşitli İslami araçlar içerir.",
+      "features": {
+        "quran": "Birden fazla hafızla Kuran okuma",
+        "azkar": "Günlük ezkar ve dualar",
+        "hadith": "Hadis koleksiyonları ve hatırlatmalar",
+        "prayer": "Konuma göre doğru namaz vakitleri",
+        "names": "Açıklamalı Esmaül Hüsna",
+        "qibla": "Kıble yön bulucu",
+        "fasting": "Oruç hatırlatmaları (Pazartesi/Perşembe)",
+        "nightMode": "Rahat okuma için gece modu",
+        "multiLang": "Çok dil desteği",
+        "offline": "Çevrimdışı kullanım"
+      }
+    },
+    "hadithBooks": {
+      "title": "Hadis Kitapları Koleksiyonu",
+      "description": "Sahih Buhari, Sahih Müslim ve diğer büyük koleksiyonlar dahil 15+ otantik hadis kitabı içeren kapsamlı Flutter uygulaması. Gelişmiş arama işlevselliği, yer işareti sistemi, çevrimdışı okuma yetenekleri ve temiz Material Design arayüzü sunar.",
+      "features": {
+        "books": "15+ otantik hadis kitabı koleksiyonu",
+        "search": "Gelişmiş arama ve filtreleme",
+        "bookmark": "Favori hadisleri işaretleme",
+        "offline": "Çevrimdışı okuma yeteneği",
+        "languages": "Çoklu dil desteği",
+        "categories": "Kategori tabanlı organizasyon",
+        "navigation": "Bölüm navigasyon sistemi",
+        "share": "Hadis paylaşma işlevselliği",
+        "ui": "Temiz Material Design UI",
+        "database": "Hızlı yerel veritabanı sorguları"
+      }
+    },
+    "alkotMobilya": {
+      "title": "Alkot Mobilya İş Yöneticisi",
+      "description": "Mobilya şirketleri için tasarlanmış kapsamlı iş yönetimi uygulaması. Envanter yönetimi, oda tabanlı işbirliği sistemi, görsel yükleme yetenekleri ve Arapça arayüz desteği ile gerçek zamanlı veri senkronizasyonu sunar.",
+      "features": {
+        "inventory": "Kapsamlı envanter yönetimi",
+        "collaboration": "Oda tabanlı proje işbirliği",
+        "images": "Görsel yükleme ve galeri sistemi",
+        "arabic": "RTL destekli Arapça arayüz",
+        "realtime": "Gerçek zamanlı veri senkronizasyonu",
+        "users": "Çok kullanıcılı erişim kontrolü",
+        "analytics": "İş analitik panosu",
+        "clients": "Müşteri yönetim sistemi",
+        "orders": "Sipariş takip işlevselliği",
+        "cloud": "Bulut depolama entegrasyonu"
+      }
+    },
+    "mandalawiQuran": {
+      "title": "Mendelavi Kuran Okuma Akademisi",
+      "description": "Kuran öğretmenlerini öğrencilerle buluşturan modern İslami eğitim yönetim platformu. Kapsamlı kullanıcı rol sistemi, kayıt yönetimi, ilerleme takibi ve gerçek zamanlı bildirimlerle tecvid seviye değerlendirmeleri sunar.",
+      "features": {
+        "auth": "Çok rollü kimlik doğrulama sistemi",
+        "enrollment": "Öğrenci kayıt yönetimi",
+        "matching": "Öğretmen-öğrenci eşleştirme algoritması",
+        "tracking": "İlerleme takibi ve analitik",
+        "assessment": "Tecvid seviye değerlendirme araçları",
+        "notifications": "Gerçek zamanlı bildirim sistemi",
+        "dashboard": "Yönetici panosu",
+        "monitoring": "Performans izleme",
+        "graduation": "Mezuniyet iş akışı sistemi",
+        "interface": "Arapça arayüz optimizasyonu"
+      }
+    },
+    "tradesmensNotebook": {
+      "title": "Esnaf Mali Defteri",
+      "description": "Esnaflar ve küçük işletme sahipleri için tasarlanmış kapsamlı işletme finans takip uygulaması. Gider ve gelir takibi, kâr hesaplamaları, döviz kuru entegrasyonu ve detaylı finansal analitik sunar.",
+      "features": {
+        "tracking": "Gider ve gelir takibi",
+        "profit": "Otomatik kâr hesaplamaları",
+        "languages": "Çok dil desteği (TR/EN/AR)",
+        "visualization": "Veri görselleştirme ve grafikler",
+        "currency": "Döviz kuru entegrasyonu",
+        "themes": "Karanlık/aydınlık tema desteği",
+        "sync": "Bulut veri senkronizasyonu",
+        "reports": "Mali rapor oluşturma",
+        "categories": "Kategori tabanlı organizasyon",
+        "analytics": "İş analitik panosu"
+      }
+    },
+    "asaltnaQuiz": {
+      "title": "Esaltna - İslami Quiz Uygulaması",
+      "description": "Çoklu soru kategorileri, ses efektleri, ilerleme takibi ve özel animasyonlarla İslami bilgilere odaklanan interaktif eğitici quiz uygulaması. Arapça dil desteği ve ilgi çekici kullanıcı arayüzü sunar.",
+      "features": {
+        "categories": "Çoklu İslami quiz kategorileri",
+        "interactive": "Interaktif soru sistemi",
+        "sounds": "Ses efektleri ve sesli geri bildirim",
+        "progress": "İlerleme takip sistemi",
+        "themes": "Karanlık/aydınlık tema desteği",
+        "arabic": "Tam Arapça dil desteği",
+        "animations": "Özel animasyonlar ve geçişler",
+        "scores": "Skor takibi ve istatistikler",
+        "learning": "Kategori tabanlı öğrenme",
+        "responsive": "Duyarlı UI tasarımı"
+      }
     }
   },
   "experience": {

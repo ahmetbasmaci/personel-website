@@ -38,7 +38,7 @@
   },
   "projects": {
     "sectionTitle": "PROJECTS",
-    "sectionSubtitle": "My Flutter Projects",
+    "sectionSubtitle": "Featured Mobile & Web Applications",
     "filter": {
       "all": "All",
       "mobile": "Mobile",
@@ -49,6 +49,102 @@
       "code": "Code",
       "demo": "Live Demo",
       "playStore": "Play Store"
+    },
+    "islamicApp": {
+      "title": "Zad-Almumin: Islamic App",
+      "description": "A comprehensive Islamic mobile application that provides Quran reading, daily supplications (Azkar), Hadith collections, prayer times, and Islamic reminders. Features beautiful UI design, multi-language support (Arabic, English, Turkish), night mode for reading, and various Islamic tools including the 99 names of Allah with explanations.",
+      "features": {
+        "quran": "Quran reading with multiple reciters",
+        "azkar": "Daily Azkar and supplications",
+        "hadith": "Hadith collections and reminders",
+        "prayer": "Accurate prayer times by location",
+        "names": "99 Names of Allah with explanations",
+        "qibla": "Qibla direction finder",
+        "fasting": "Fasting reminders (Monday/Thursday)",
+        "nightMode": "Night mode for comfortable reading",
+        "multiLang": "Multi-language support",
+        "offline": "Offline functionality"
+      }
+    },
+    "hadithBooks": {
+      "title": "Hadith Books Collection",
+      "description": "A comprehensive Flutter application containing 15+ authentic hadith books including Sahih Bukhari, Sahih Muslim, and other major collections. Features advanced search functionality, bookmarking system, offline reading capabilities, and clean Material Design interface.",
+      "features": {
+        "books": "15+ authentic hadith books collection",
+        "search": "Advanced search and filtering",
+        "bookmark": "Bookmark favorite hadiths",
+        "offline": "Offline reading capability",
+        "languages": "Multiple language support",
+        "categories": "Category-based organization",
+        "navigation": "Chapter navigation system",
+        "share": "Share hadith functionality",
+        "ui": "Clean Material Design UI",
+        "database": "Fast local database queries"
+      }
+    },
+    "alkotMobilya": {
+      "title": "Alkot Mobilya Business Manager",
+      "description": "A comprehensive business management application designed for furniture companies. Features inventory management, room-based collaboration system, image upload capabilities, and real-time data synchronization with Arabic interface support.",
+      "features": {
+        "inventory": "Comprehensive inventory management",
+        "collaboration": "Room-based project collaboration",
+        "images": "Image upload and gallery system",
+        "arabic": "Arabic interface with RTL support",
+        "realtime": "Real-time data synchronization",
+        "users": "Multi-user access control",
+        "analytics": "Business analytics dashboard",
+        "clients": "Client management system",
+        "orders": "Order tracking functionality",
+        "cloud": "Cloud storage integration"
+      }
+    },
+    "mandalawiQuran": {
+      "title": "Mandalawi Quran Recitation Academy",
+      "description": "A modern Islamic education management platform that connects Quran teachers with students. Features comprehensive user role system, enrollment management, progress tracking, and tajweed level assessments with real-time notifications.",
+      "features": {
+        "auth": "Multi-role authentication system",
+        "enrollment": "Student enrollment management",
+        "matching": "Teacher-student matching algorithm",
+        "tracking": "Progress tracking and analytics",
+        "assessment": "Tajweed level assessment tools",
+        "notifications": "Real-time notification system",
+        "dashboard": "Administrative dashboard",
+        "monitoring": "Performance monitoring",
+        "graduation": "Graduation workflow system",
+        "interface": "Arabic interface optimization"
+      }
+    },
+    "tradesmensNotebook": {
+      "title": "Tradesman's Financial Notebook",
+      "description": "A comprehensive business finance tracking application designed for tradesmen and small business owners. Features expense and income tracking, profit calculations, currency exchange integration, and detailed financial analytics.",
+      "features": {
+        "tracking": "Expense and income tracking",
+        "profit": "Automated profit calculations",
+        "languages": "Multi-language support (EN/TR/AR)",
+        "visualization": "Data visualization and charts",
+        "currency": "Currency exchange integration",
+        "themes": "Dark/light theme support",
+        "sync": "Cloud data synchronization",
+        "reports": "Financial report generation",
+        "categories": "Category-based organization",
+        "analytics": "Business analytics dashboard"
+      }
+    },
+    "asaltnaQuiz": {
+      "title": "Asaltna - Islamic Quiz Application",
+      "description": "An interactive educational quiz application focused on Islamic knowledge with multiple question categories, sound effects, progress tracking, and custom animations. Features Arabic language support and engaging user interface.",
+      "features": {
+        "categories": "Multiple Islamic quiz categories",
+        "interactive": "Interactive question system",
+        "sounds": "Sound effects and audio feedback",
+        "progress": "Progress tracking system",
+        "themes": "Dark/light theme support",
+        "arabic": "Full Arabic language support",
+        "animations": "Custom animations and transitions",
+        "scores": "Score tracking and statistics",
+        "learning": "Category-based learning",
+        "responsive": "Responsive UI design"
+      }
     }
   },
   "experience": {

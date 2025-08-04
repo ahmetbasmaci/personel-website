@@ -259,6 +259,29 @@ class LanguageManager {
                 }
             }
 
+            // Update project title and description using data-project-key
+            const projectKey = card.getAttribute('data-project-key');
+            
+            if (projectKey) {
+                // Update title
+                const titleElement = card.querySelector('.project-title');
+                if (titleElement) {
+                    const titleTranslationKey = `projects.${projectKey}.title`;
+                    const originalTitle = titleElement.textContent.trim();
+                    const translatedTitle = this.translateDynamicContent(titleElement, titleTranslationKey, originalTitle);
+                    titleElement.textContent = translatedTitle;
+                }
+                
+                // Update description  
+                const descriptionElement = card.querySelector('.project-description');
+                if (descriptionElement) {
+                    const descTranslationKey = `projects.${projectKey}.description`;
+                    const originalDescription = descriptionElement.textContent.trim();
+                    const translatedDescription = this.translateDynamicContent(descriptionElement, descTranslationKey, originalDescription);
+                    descriptionElement.textContent = translatedDescription;
+                }
+            }
+
             // Update project links
             const projectLinks = card.querySelectorAll('.project-link');
             projectLinks.forEach(link => {
