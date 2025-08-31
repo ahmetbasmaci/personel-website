@@ -129,22 +129,6 @@
         "categories": "Kategori tabanlı organizasyon",
         "analytics": "İş analitik panosu"
       }
-    },
-    "asaltnaQuiz": {
-      "title": "Esaltna - İslami Quiz Uygulaması",
-      "description": "Çoklu soru kategorileri, ses efektleri, ilerleme takibi ve özel animasyonlarla İslami bilgilere odaklanan interaktif eğitici quiz uygulaması. Arapça dil desteği ve ilgi çekici kullanıcı arayüzü sunar.",
-      "features": {
-        "categories": "Çoklu İslami quiz kategorileri",
-        "interactive": "Interaktif soru sistemi",
-        "sounds": "Ses efektleri ve sesli geri bildirim",
-        "progress": "İlerleme takip sistemi",
-        "themes": "Karanlık/aydınlık tema desteği",
-        "arabic": "Tam Arapça dil desteği",
-        "animations": "Özel animasyonlar ve geçişler",
-        "scores": "Skor takibi ve istatistikler",
-        "learning": "Kategori tabanlı öğrenme",
-        "responsive": "Duyarlı UI tasarımı"
-      }
     }
   },
   "experience": {

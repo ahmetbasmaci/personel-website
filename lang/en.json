@@ -129,22 +129,6 @@
         "categories": "Category-based organization",
         "analytics": "Business analytics dashboard"
       }
-    },
-    "asaltnaQuiz": {
-      "title": "Asaltna - Islamic Quiz Application",
-      "description": "An interactive educational quiz application focused on Islamic knowledge with multiple question categories, sound effects, progress tracking, and custom animations. Features Arabic language support and engaging user interface.",
-      "features": {
-        "categories": "Multiple Islamic quiz categories",
-        "interactive": "Interactive question system",
-        "sounds": "Sound effects and audio feedback",
-        "progress": "Progress tracking system",
-        "themes": "Dark/light theme support",
-        "arabic": "Full Arabic language support",
-        "animations": "Custom animations and transitions",
-        "scores": "Score tracking and statistics",
-        "learning": "Category-based learning",
-        "responsive": "Responsive UI design"
-      }
     }
   },
   "experience": {

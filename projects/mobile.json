@@ -29,7 +29,7 @@
     "description": "A comprehensive Flutter application containing 15+ authentic hadith books including Sahih Bukhari, Sahih Muslim, and other major collections. Features advanced search functionality, bookmarking system, offline reading capabilities, and clean Material Design interface with multi-language support.",
     "technologies": ["Flutter", "Dart", "BLoC Pattern", "SQLite", "Hive Database", "Material Design", "Search Algorithms", "Multi-language Support"],
     "github": "https://github.com/ahmetbasmaci/hadith_books",
-    "demo": "https://play.google.com/store/apps/details?id=com.ahmet.hadith_books",
+    "demo": "https://play.google.com/store/apps/details?id=com.ahmet.hadithBooks",
     "image": "assets/projects/hadith-books.jpg",
     "featured": true,
     "status": "Published",
@@ -54,7 +54,7 @@
     "description": "A comprehensive business management application designed for furniture companies. Features inventory management, room-based collaboration system, image upload capabilities, and real-time data synchronization with Arabic interface support for Middle Eastern markets.",
     "technologies": ["Flutter", "Dart", "Firebase", "Cloud Firestore", "Firebase Storage", "Image Processing", "Real-time Database", "Arabic RTL Support"],
     "github": "https://github.com/ahmetbasmaci/Freelance-Busnis-App-Alkot-Mobilya",
-    "demo": "https://play.google.com/store/apps/details?id=com.ahmet.alkot_mobilya",
+    "demo": "https://play.google.com/store/apps/details?id=com.eng_ahmet.alkot_mobilya",
     "image": "assets/projects/alkot-mobilya.jpg",
     "featured": true,
     "status": "Published",
@@ -79,7 +79,7 @@
     "description": "A modern Islamic education management platform that connects Quran teachers with students. Features comprehensive user role system (teachers, students, managers), enrollment management, progress tracking, and tajweed level assessments with real-time notifications and administrative controls.",
     "technologies": ["Flutter", "Dart", "Firebase", "BLoC Pattern", "Cloud Firestore", "Firebase Auth", "Push Notifications", "Clean Architecture"],
     "github": "https://github.com/ahmetbasmaci/mandalawi_quran_recitation",
-    "demo": null,
+    "demo": "https://play.google.com/store/apps/details?id=com.ahmet.mandalawi_quran_recitation",
     "image": "assets/projects/mandalawi-quran.jpg",
     "featured": true,
     "status": "Development",
@@ -122,31 +122,6 @@
       "Financial report generation",
       "Category-based organization",
       "Business analytics dashboard"
-    ]
-  },
-  {
-    "title": "Asaltna - Islamic Quiz Application",
-    "description": "An interactive educational quiz application focused on Islamic knowledge with multiple question categories, sound effects, progress tracking, and custom animations. Features Arabic language support, dark/light themes, and engaging user interface for learning Islamic concepts.",
-    "technologies": ["Flutter", "Dart", "GetX", "GetStorage", "AudioPlayers", "Custom Animations", "Theme Management", "Arabic Localization"],
-    "github": "https://github.com/ahmetbasmaci/omer_rihawi",
-    "demo": null,
-    "image": "assets/projects/asaltna-quiz.jpg",
-    "featured": false,
-    "status": "Development",
-    "year": "2024",
-    "downloads": "Beta",
-    "rating": "N/A",
-    "features": [
-      "Multiple Islamic quiz categories",
-      "Interactive question system",
-      "Sound effects and audio feedback",
-      "Progress tracking system",
-      "Dark/light theme support",
-      "Full Arabic language support",
-      "Custom animations and transitions",
-      "Score tracking and statistics",
-      "Category-based learning",
-      "Responsive UI design"
     ]
   }
 ]
