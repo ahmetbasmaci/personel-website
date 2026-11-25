@@ -252,10 +252,12 @@ class LanguageManager {
                 const category = card.getAttribute('data-category');
                 if (category) {
                     const translationKey = `projects.filter.${category}`;
-                    const translation = this.translateDynamicContent(categoryElement, translationKey, category);
-                    if (translation !== category) {
-                        categoryElement.textContent = translation;
+                    // Store original category value as data attr to avoid double-translation
+                    if (!categoryElement.hasAttribute('data-original-category')) {
+                        categoryElement.setAttribute('data-original-category', category);
                     }
+                    const translation = this.translateDynamicContent(categoryElement, translationKey, category);
+                    categoryElement.textContent = translation;
                 }
             }
 
@@ -263,21 +265,29 @@ class LanguageManager {
             const projectKey = card.getAttribute('data-project-key');
             
             if (projectKey) {
-                // Update title
+                // Update title — always use translation key, store original as fallback
                 const titleElement = card.querySelector('.project-title');
                 if (titleElement) {
+                    // Store original English title once
+                    if (!titleElement.hasAttribute('data-original-text')) {
+                        titleElement.setAttribute('data-original-text', titleElement.textContent.trim());
+                    }
                     const titleTranslationKey = `projects.${projectKey}.title`;
-                    const originalTitle = titleElement.textContent.trim();
-                    const translatedTitle = this.translateDynamicContent(titleElement, titleTranslationKey, originalTitle);
+                    const fallback = titleElement.getAttribute('data-original-text');
+                    const translatedTitle = this.translateDynamicContent(titleElement, titleTranslationKey, fallback);
                     titleElement.textContent = translatedTitle;
                 }
                 
-                // Update description  
+                // Update description — always use translation key, store original as fallback
                 const descriptionElement = card.querySelector('.project-description');
                 if (descriptionElement) {
+                    // Store original English description once
+                    if (!descriptionElement.hasAttribute('data-original-text')) {
+                        descriptionElement.setAttribute('data-original-text', descriptionElement.textContent.trim());
+                    }
                     const descTranslationKey = `projects.${projectKey}.description`;
-                    const originalDescription = descriptionElement.textContent.trim();
-                    const translatedDescription = this.translateDynamicContent(descriptionElement, descTranslationKey, originalDescription);
+                    const fallback = descriptionElement.getAttribute('data-original-text');
+                    const translatedDescription = this.translateDynamicContent(descriptionElement, descTranslationKey, fallback);
                     descriptionElement.textContent = translatedDescription;
                 }
             }
@@ -285,27 +295,19 @@ class LanguageManager {
             // Update project links
             const projectLinks = card.querySelectorAll('.project-link');
             projectLinks.forEach(link => {
-                const text = link.textContent.trim();
                 const icon = link.querySelector('i');
                 const iconClass = icon ? icon.className : '';
-                
-                let newText = text;
+                const iconHTML = icon ? icon.outerHTML : '';
                 
                 if (iconClass.includes('fa-github')) {
-                    newText = this.translateDynamicContent(link, 'projects.links.code', 'Code');
+                    const newText = this.translateDynamicContent(link, 'projects.links.code', 'Code');
+                    link.innerHTML = `${iconHTML} ${newText}`;
                 } else if (iconClass.includes('fa-external-link-alt')) {
-                    const card = link.closest('.project-card');
-                    const category = card ? card.getAttribute('data-category') : '';
-                    if (category === 'mobile') {
-                        newText = this.translateDynamicContent(link, 'projects.links.playStore', 'Play Store');
-                    } else {
-                        newText = this.translateDynamicContent(link, 'projects.links.demo', 'Live Demo');
-                    }
-                }
-                
-                if (newText !== text) {
-                    // Preserve the icon and update only the text
-                    const iconHTML = icon ? icon.outerHTML : '';
+                    const parentCard = link.closest('.project-card');
+                    const category = parentCard ? parentCard.getAttribute('data-category') : '';
+                    const newText = category === 'mobile'
+                        ? this.translateDynamicContent(link, 'projects.links.playStore', 'Play Store')
+                        : this.translateDynamicContent(link, 'projects.links.demo', 'Live Demo');
                     link.innerHTML = `${iconHTML} ${newText}`;
                 }
             });
