@@ -5,20 +5,21 @@
     "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
+    "education": "Education",
     "contact": "Contact"
   },
   "hero": {
     "title": "FLUTTER & .NET DEVELOPER",
     "name": "Ahmet Basmacı",
-    "description": "Passionate mobile and web developer with expertise in Flutter, .NET, and modern development frameworks. Experienced in AI tools and prompt engineering to create innovative solutions and publish successful mobile applications on Play Store.",
+    "description": "Software Engineer at Primeware with 4+ years of experience building high-performance mobile and web applications. Published 7+ apps on Google Play Store with 100K+ downloads. Expert in Flutter, .NET, Clean Architecture, and SOLID principles.",
     "getInTouch": "Get In Touch",
     "downloadCV": "Download CV"
   },
   "about": {
     "sectionTitle": "ABOUT",
     "sectionSubtitle": "Get to know me better",
-    "paragraph1": "I am a dedicated and passionate software developer with a strong background in mobile and web development. My journey in technology has led me to specialize in Flutter for cross-platform mobile development and .NET for robust backend solutions.",
-    "paragraph2": "With experience in publishing multiple applications on Google Play Store and working with various technologies, I bring a comprehensive understanding of the full development lifecycle. I leverage AI tools and prompt engineering to enhance productivity and create innovative solutions. I'm always eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible.",
+    "paragraph1": "I have successfully published over seven apps on the Google Play Store. I am committed to continuous learning and skill enhancement to deliver superior applications and exceptional user experiences.",
+    "paragraph2": "I consistently apply SOLID principles and clean code practices in all my projects while focusing on performance optimization and efficient memory usage. With expertise in Flutter and .NET, I build high-quality cross-platform mobile and backend solutions.",
     "stats": {
       "apps": "Published Apps",
       "experience": "Years Experience",
@@ -68,25 +69,36 @@
     },
     "hadithBooks": {
       "title": "Hadith Books Collection",
-      "description": "A comprehensive Flutter application containing 15+ authentic hadith books including Sahih Bukhari, Sahih Muslim, and other major collections. Features advanced search functionality, bookmarking system, offline reading capabilities, and clean Material Design interface.",
+      "description": "A comprehensive Flutter application containing 10+ authentic hadith books including Sahih Bukhari, Sahih Muslim, and other major collections. Features advanced search functionality, reading position saving, offline reading capabilities, and clean Material Design interface with Arabic and English support.",
       "features": {
-        "books": "15+ authentic hadith books collection",
+        "books": "10+ authentic hadith books collection",
         "search": "Advanced search and filtering",
-        "bookmark": "Bookmark favorite hadiths",
+        "bookmark": "Reading position saving",
         "offline": "Offline reading capability",
-        "languages": "Multiple language support",
+        "languages": "Arabic and English support",
         "categories": "Category-based organization",
         "navigation": "Chapter navigation system",
         "share": "Share hadith functionality",
         "ui": "Clean Material Design UI",
-        "database": "Fast local database queries"
+        "database": "Fast local SQLite database queries"
+      }
+    },
+    "fingerPrint": {
+      "title": "Finger Print Lying Checker",
+      "description": "A fun and viral entertainment app that uses fingerprint detection for a playful lie-detecting experience. Achieved over 100K downloads on Google Play Store with engaging audio and interactive animations.",
+      "features": {
+        "downloads": "100K+ downloads on Play Store",
+        "audio": "Audio player integration",
+        "ads": "AdMob monetization",
+        "fun": "Fun interactive fingerprint experience",
+        "animations": "Engaging result animations"
       }
     },
     "alkotMobilya": {
       "title": "Alkot Mobilya Business Manager",
-      "description": "A comprehensive business management application designed for furniture companies. Features inventory management, room-based collaboration system, image upload capabilities, and real-time data synchronization with Arabic interface support.",
+      "description": "A freelance business management application designed for a furniture company. Allows the client to send product images and descriptions, then upload them to their website. Features real-time data synchronization and Arabic interface support.",
       "features": {
-        "inventory": "Comprehensive inventory management",
+        "inventory": "Product image and description management",
         "collaboration": "Room-based project collaboration",
         "images": "Image upload and gallery system",
         "arabic": "Arabic interface with RTL support",
@@ -98,25 +110,9 @@
         "cloud": "Cloud storage integration"
       }
     },
-    "mandalawiQuran": {
-      "title": "Mandalawi Quran Recitation Academy",
-      "description": "A modern Islamic education management platform that connects Quran teachers with students. Features comprehensive user role system, enrollment management, progress tracking, and tajweed level assessments with real-time notifications.",
-      "features": {
-        "auth": "Multi-role authentication system",
-        "enrollment": "Student enrollment management",
-        "matching": "Teacher-student matching algorithm",
-        "tracking": "Progress tracking and analytics",
-        "assessment": "Tajweed level assessment tools",
-        "notifications": "Real-time notification system",
-        "dashboard": "Administrative dashboard",
-        "monitoring": "Performance monitoring",
-        "graduation": "Graduation workflow system",
-        "interface": "Arabic interface optimization"
-      }
-    },
     "tradesmensNotebook": {
       "title": "Tradesman's Financial Notebook",
-      "description": "A comprehensive business finance tracking application designed for tradesmen and small business owners. Features expense and income tracking, profit calculations, currency exchange integration, and detailed financial analytics.",
+      "description": "A comprehensive business finance tracking application designed for tradesmen and small business owners. Features expense and income tracking, profit calculations, currency exchange integration, and detailed financial analytics with multi-language support (English, Turkish, Arabic).",
       "features": {
         "tracking": "Expense and income tracking",
         "profit": "Automated profit calculations",
@@ -129,30 +125,55 @@
         "categories": "Category-based organization",
         "analytics": "Business analytics dashboard"
       }
+    },
+    "asaltnaQuiz": {
+      "title": "Asaltna - Islamic Quiz Application",
+      "description": "An interactive Islamic quiz application testing users' knowledge about the Quran, Hadith, and Islamic history. Features multiple difficulty levels and leaderboards.",
+      "features": {
+        "quiz": "Interactive Islamic quiz questions",
+        "levels": "Multiple difficulty levels",
+        "leaderboard": "Global leaderboard system"
+      }
     }
   },
   "experience": {
     "sectionTitle": "EXPERIENCE",
     "sectionSubtitle": "My professional journey",
     "positions": {
-      "flutter": {
-        "title": "Flutter Developer",
-        "company": "Primeware Software Solutions",
-        "date": "Sep 2023 - Present",
-        "description": "Developing cross-platform mobile applications using Flutter framework. Working on various client projects and contributing to the company's mobile development initiatives."
+      "engineer": {
+        "title": "Software Engineer",
+        "company": "Primeware",
+        "date": "Jan 2024 - Present",
+        "description": "Enhance product performance and memory management via SOLID principles and design patterns through code refactoring. Develop Flutter mobile applications including a finance tracking app and an appointment scheduling app for sports clubs. Conduct technical interviews and evaluate candidates for new team positions."
       },
-      "dotnet": {
-        "title": ".NET Developer",
-        "company": "Primeware Software Solutions",
-        "date": "Jun 2023 - Sep 2023",
-        "description": "Developed web applications using .NET framework, ASP.NET, and C#. Worked on backend systems and API development for various client projects."
+      "junior": {
+        "title": "Junior Software Developer",
+        "company": "Primeware",
+        "date": "Aug 2022 - Jan 2024",
+        "description": "Contributed to a Windows Forms desktop air conditioning application using C# and DevExpress. Fixed errors, implemented new features, refactored code, and enhanced performance. Migrated database from SQL Server to SQLite, reducing storage space and increasing data access speed. Optimized technical reports and 3D drawing features."
+      },
+      "intern": {
+        "title": "Software Engineer Intern",
+        "company": "Primeware",
+        "date": "Jul 2022 - Aug 2022",
+        "description": "Fixed logic and technical errors in various software applications. Improved coding skills and problem-solving abilities through hands-on experience with real-world projects."
       },
       "independent": {
         "title": "Independent Mobile App Developer",
         "company": "Google Play Store",
         "date": "2021 - Present",
-        "description": "Published and maintain several mobile applications on Google Play Store, gaining experience in the complete app development lifecycle from concept to deployment."
+        "description": "Published over 7 mobile applications on Google Play Store, achieving 100K+ downloads for a single app. Managed the complete app development lifecycle from concept to deployment, maintaining and improving apps based on user feedback."
       }
+    }
+  },
+  "education": {
+    "sectionTitle": "EDUCATION",
+    "sectionSubtitle": "Academic background",
+    "degree": {
+      "title": "B.Sc. Computer Engineering",
+      "university": "Sakarya University",
+      "date": "Oct 2019 - Jul 2023",
+      "description": "Faculty of Computer Engineering, Computer Engineering Department. Sakarya, Turkey."
     }
   },
   "contact": {
@@ -173,7 +194,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Ahmet Basmaci. All rights reserved."
+    "copyright": "© 2026 Ahmet Basmacı. All rights reserved."
   },
   "common": {
     "themeToggle": "Toggle dark/light theme"

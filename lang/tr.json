@@ -5,20 +5,21 @@
     "skills": "Yetenekler",
     "projects": "Projeler",
     "experience": "Deneyim",
+    "education": "Eğitim",
     "contact": "İletişim"
   },
   "hero": {
     "title": "FLUTTER & .NET GELİŞTİRİCİ",
     "name": "Ahmet Basmacı",
-    "description": "Flutter, .NET ve modern geliştirme frameworklerinde uzmanlığa sahip tutkulu mobil ve web geliştiricisi. Yenilikçi çözümler oluşturmak ve Play Store'da başarılı mobil uygulamalar yayınlamak için AI araçları ve prompt mühendisliği konularında deneyimli.",
+    "description": "Primeware'de 4+ yıl deneyimli Yazılım Mühendisi. Google Play Store'da 7+ uygulama yayınladı, tek bir uygulamada 100K+ indirme elde etti. Flutter, .NET, Temiz Mimari ve SOLID prensiplerinde uzman.",
     "getInTouch": "İletişime Geç",
     "downloadCV": "CV İndir"
   },
   "about": {
     "sectionTitle": "HAKKIMDA",
     "sectionSubtitle": "Beni daha yakından tanıyın",
-    "paragraph1": "Mobil ve web geliştirme alanında güçlü bir geçmişe sahip, kendini işine adamış ve tutkulu bir yazılım geliştiricisiyim. Teknoloji yolculuğum beni cross-platform mobil geliştirme için Flutter ve sağlam backend çözümleri için .NET konularında uzmanlaşmaya yönlendirdi.",
-    "paragraph2": "Google Play Store'da birden fazla uygulama yayınlama deneyimi ve çeşitli teknolojilerle çalışma tecrübesiyle, tam geliştirme yaşam döngüsünü kapsamlı bir şekilde anlıyorum. Üretkenliği artırmak ve yenilikçi çözümler oluşturmak için AI araçları ve prompt mühendisliği konularından yararlanıyorum. Her zaman yeni teknolojiler öğrenmeye ve mümkün olanın sınırlarını zorlayan zorlu projelerle uğraşmaya istekliyim.",
+    "paragraph1": "Google Play Store'da yedi'den fazla uygulama başarıyla yayınladım. Üstün uygulamalar ve olağanüstü kullanıcı deneyimleri sunmak için sürekli öğrenmeye ve beceri geliştirmeye kararlıyım.",
+    "paragraph2": "Tüm projelerimde performans optimizasyonu ve verimli bellek kullanımına odaklanarak SOLID prensiplerini ve temiz kod uygulamalarını tutarlı biçimde uyguluyorum. Flutter ve .NET uzmanlığımla yüksek kaliteli çok platformlu mobil ve backend çözümleri geliştiriyorum.",
     "stats": {
       "apps": "Yayınlanan Uygulama",
       "experience": "Yıl Deneyim",
@@ -52,7 +53,7 @@
     },
     "islamicApp": {
       "title": "Zad-Almumin: İslami Uygulama",
-      "description": "Kuran okuma, günlük dualar (Ezkar), Hadis koleksiyonları, namaz vakitleri ve İslami hatırlatmalar sunan kapsamlı bir İslami mobil uygulama. Güzel UI tasarımı, çok dil desteği (Arapça, İngilizce, Türkçe), okuma için gece modu ve açıklamalı Esmaül Hüsna gibi çeşitli İslami araçlar içerir.",
+      "description": "Kuran okuma, günlük dualar (Ezkar), Hadis koleksiyonları, namaz vakitleri ve İslami hatırlatmalar sunan kapsamlı bir İslami mobil uygulama. Güzel UI tasarımı, çok dil desteği (Arapça, İngilizce, Türkçe) ve gece modu içerir.",
       "features": {
         "quran": "Birden fazla hafızla Kuran okuma",
         "azkar": "Günlük ezkar ve dualar",
@@ -68,25 +69,36 @@
     },
     "hadithBooks": {
       "title": "Hadis Kitapları Koleksiyonu",
-      "description": "Sahih Buhari, Sahih Müslim ve diğer büyük koleksiyonlar dahil 15+ otantik hadis kitabı içeren kapsamlı Flutter uygulaması. Gelişmiş arama işlevselliği, yer işareti sistemi, çevrimdışı okuma yetenekleri ve temiz Material Design arayüzü sunar.",
+      "description": "Sahih Buhari, Sahih Müslim dahil 10+ otantik hadis kitabı içeren kapsamlı Flutter uygulaması. Gelişmiş arama, okuma konumu kaydetme ve Arapça/İngilizce dil desteği sunar.",
       "features": {
-        "books": "15+ otantik hadis kitabı koleksiyonu",
+        "books": "10+ otantik hadis kitabı koleksiyonu",
         "search": "Gelişmiş arama ve filtreleme",
-        "bookmark": "Favori hadisleri işaretleme",
+        "bookmark": "Okuma konumunu kaydetme",
         "offline": "Çevrimdışı okuma yeteneği",
-        "languages": "Çoklu dil desteği",
+        "languages": "Arapça ve İngilizce desteği",
         "categories": "Kategori tabanlı organizasyon",
         "navigation": "Bölüm navigasyon sistemi",
         "share": "Hadis paylaşma işlevselliği",
         "ui": "Temiz Material Design UI",
-        "database": "Hızlı yerel veritabanı sorguları"
+        "database": "Hızlı yerel SQLite sorguları"
+      }
+    },
+    "fingerPrint": {
+      "title": "Parmak İzi Yalan Dedektörü",
+      "description": "Parmak izi teknolojisini eğlenceli yalan dedektörü deneyimi için kullanan viral bir eğlence uygulaması. Google Play Store'da 100K+ indirme elde etti.",
+      "features": {
+        "downloads": "Play Store'da 100K+ indirme",
+        "audio": "Ses oynatıcı entegrasyonu",
+        "ads": "AdMob monetizasyonu",
+        "fun": "Eğlenceli parmak izi deneyimi",
+        "animations": "İlgi çekici sonuç animasyonları"
       }
     },
     "alkotMobilya": {
       "title": "Alkot Mobilya İş Yöneticisi",
-      "description": "Mobilya şirketleri için tasarlanmış kapsamlı iş yönetimi uygulaması. Envanter yönetimi, oda tabanlı işbirliği sistemi, görsel yükleme yetenekleri ve Arapça arayüz desteği ile gerçek zamanlı veri senkronizasyonu sunar.",
+      "description": "Bir mobilya şirketi için geliştirilen freelance iş yönetimi uygulaması. Müşterinin ürün fotoğrafları ve açıklamaları göndermesini, ardından bunları web sitesine yüklemesini sağlar.",
       "features": {
-        "inventory": "Kapsamlı envanter yönetimi",
+        "inventory": "Ürün görseli ve açıklama yönetimi",
         "collaboration": "Oda tabanlı proje işbirliği",
         "images": "Görsel yükleme ve galeri sistemi",
         "arabic": "RTL destekli Arapça arayüz",
@@ -98,25 +110,9 @@
         "cloud": "Bulut depolama entegrasyonu"
       }
     },
-    "mandalawiQuran": {
-      "title": "Mendelavi Kuran Okuma Akademisi",
-      "description": "Kuran öğretmenlerini öğrencilerle buluşturan modern İslami eğitim yönetim platformu. Kapsamlı kullanıcı rol sistemi, kayıt yönetimi, ilerleme takibi ve gerçek zamanlı bildirimlerle tecvid seviye değerlendirmeleri sunar.",
-      "features": {
-        "auth": "Çok rollü kimlik doğrulama sistemi",
-        "enrollment": "Öğrenci kayıt yönetimi",
-        "matching": "Öğretmen-öğrenci eşleştirme algoritması",
-        "tracking": "İlerleme takibi ve analitik",
-        "assessment": "Tecvid seviye değerlendirme araçları",
-        "notifications": "Gerçek zamanlı bildirim sistemi",
-        "dashboard": "Yönetici panosu",
-        "monitoring": "Performans izleme",
-        "graduation": "Mezuniyet iş akışı sistemi",
-        "interface": "Arapça arayüz optimizasyonu"
-      }
-    },
     "tradesmensNotebook": {
       "title": "Esnaf Mali Defteri",
-      "description": "Esnaflar ve küçük işletme sahipleri için tasarlanmış kapsamlı işletme finans takip uygulaması. Gider ve gelir takibi, kâr hesaplamaları, döviz kuru entegrasyonu ve detaylı finansal analitik sunar.",
+      "description": "Esnaflar ve küçük işletme sahipleri için geliştirilmiş kapsamlı finansal takip uygulaması. Çoklu dil desteğiyle (İngilizce, Türkçe, Arapça) gider/gelir takibi ve kâr hesaplaması sunar.",
       "features": {
         "tracking": "Gider ve gelir takibi",
         "profit": "Otomatik kâr hesaplamaları",
@@ -129,30 +125,55 @@
         "categories": "Kategori tabanlı organizasyon",
         "analytics": "İş analitik panosu"
       }
+    },
+    "asaltnaQuiz": {
+      "title": "Asaltna - İslami Quiz Uygulaması",
+      "description": "Kullanıcıların Kuran, Hadis ve İslam tarihi bilgilerini test eden interaktif İslami quiz uygulaması. Birden fazla zorluk seviyesi ve liderlik tablosu içerir.",
+      "features": {
+        "quiz": "İnteraktif İslami quiz soruları",
+        "levels": "Çoklu zorluk seviyeleri",
+        "leaderboard": "Global liderlik tablosu sistemi"
+      }
     }
   },
   "experience": {
     "sectionTitle": "DENEYİM",
     "sectionSubtitle": "Profesyonel yolculuğum",
     "positions": {
-      "flutter": {
-        "title": "Flutter Geliştiricisi",
-        "company": "Primeware Yazılım Çözümleri",
-        "date": "Eyl 2023 - Devam Ediyor",
-        "description": "Flutter framework kullanarak cross-platform mobil uygulamalar geliştiriyorum. Çeşitli müşteri projelerinde çalışıyor ve şirketin mobil geliştirme girişimlerine katkıda bulunuyorum."
+      "engineer": {
+        "title": "Yazılım Mühendisi",
+        "company": "Primeware",
+        "date": "Oca 2024 - Devam Ediyor",
+        "description": "SOLID prensipleri ve tasarım desenleriyle kod yeniden yapılandırma yoluyla ürün performansı ve bellek yönetimini iyileştirme. Finans takip ve spor kulüpleri randevu planlama Flutter uygulamaları geliştirme. Teknik mülakatlar yapma ve yeni ekip üyelerini değerlendirme."
       },
-      "dotnet": {
-        "title": ".NET Geliştiricisi",
-        "company": "Primeware Yazılım Çözümleri",
-        "date": "Haz 2023 - Eyl 2023",
-        "description": ".NET framework, ASP.NET ve C# kullanarak web uygulamaları geliştirdim. Çeşitli müşteri projeleri için backend sistemleri ve API geliştirme üzerinde çalıştım."
+      "junior": {
+        "title": "Junior Yazılım Geliştirici",
+        "company": "Primeware",
+        "date": "Ağu 2022 - Oca 2024",
+        "description": "C# ve DevExpress kullanarak Windows Forms iklimlendirme masaüstü uygulamasına katkı sağlama. Hataları düzeltme, yeni özellikler ekleme ve performansı artırma. Veritabanını SQL Server'dan SQLite'a taşıyarak depolama alanını azaltma ve veri erişim hızını artırma."
+      },
+      "intern": {
+        "title": "Yazılım Mühendisi Stajyeri",
+        "company": "Primeware",
+        "date": "Tem 2022 - Ağu 2022",
+        "description": "Çeşitli yazılım uygulamalarındaki mantıksal ve teknik hataları düzeltme. Gerçek dünya projeleriyle pratik deneyim kazanarak kodlama ve problem çözme becerilerini geliştirme."
       },
       "independent": {
         "title": "Bağımsız Mobil Uygulama Geliştiricisi",
         "company": "Google Play Store",
         "date": "2021 - Devam Ediyor",
-        "description": "Google Play Store'da birkaç mobil uygulama yayınladım ve sürdürüyorum, konseptten dağıtıma kadar tam uygulama geliştirme yaşam döngüsünde deneyim kazandım."
+        "description": "Google Play Store'da 7'den fazla mobil uygulama yayınladı; tek bir uygulamada 100K+ indirme elde etti. Kullanıcı geri bildirimlerine göre uygulamaları koruyarak ve geliştirerek konseptten dağıtıma kadar tam geliştirme yaşam döngüsünü yönetti."
       }
+    }
+  },
+  "education": {
+    "sectionTitle": "EĞİTİM",
+    "sectionSubtitle": "Akademik geçmiş",
+    "degree": {
+      "title": "Lisans - Bilgisayar Mühendisliği",
+      "university": "Sakarya Üniversitesi",
+      "date": "Eki 2019 - Tem 2023",
+      "description": "Bilgisayar Mühendisliği Fakültesi, Bilgisayar Mühendisliği Bölümü. Sakarya, Türkiye."
     }
   },
   "contact": {
@@ -173,7 +194,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Ahmet Başmacı. Tüm hakları saklıdır."
+    "copyright": "© 2026 Ahmet Başmacı. Tüm hakları saklıdır."
   },
   "common": {
     "themeToggle": "Karanlık/aydınlık tema arasında geçiş yap"

@@ -287,6 +287,7 @@ function createProjectCard(project) {
     const projectTranslationMap = {
         "Zad-Almumin: Islamic App": "islamicApp",
         "Hadith Books Collection": "hadithBooks",
+        "Finger Print Lying Checker": "fingerPrint",
         "Mandalawi Quran Recitation Academy": "mandalawiQuran",
         "Alkot Mobilya Business Manager": "alkotMobilya",
         "Tradesman's Financial Notebook": "tradesmensNotebook",
